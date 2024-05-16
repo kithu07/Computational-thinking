@@ -1,0 +1,16 @@
+def generate_primes(limit):
+    def is_prime(num):
+        factor = 5
+        while factor * factor <= num:
+            if num % factor ==0:
+                return False
+            factor += 2
+        return True
+    primes = [2, 3, 5]
+
+    for n in range(6, limit, 6):
+        for step in [1, 5]:
+            if is_prime(n + step):
+                primes.append(n + step)
+    return primes
+print(generate_primes(1000))

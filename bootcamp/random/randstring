@@ -1,0 +1,9 @@
+import random
+def gen_random_string():
+    characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+    gen_string = ""
+    for i in range(5):
+        gen_string += characters[random.randint(0, len(characters))]
+    return gen_string
+
+print(gen_random_string())
