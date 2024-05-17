@@ -25,3 +25,7 @@ This repository includes all the programs done during the bootcamp.
 11. Charging problem
 
 12. Notes
+
+13. Cipher problem
+
+14. Euclid's extended algorithm for Modulo inverse
