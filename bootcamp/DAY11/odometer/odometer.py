@@ -1,5 +1,5 @@
 def strictly_ascending(distance: int):
-    return [chr for chr in str(distance)] == sorted(set(str(distance)))
+    return list(str(distance)) == sorted(set(str(distance)))
 
 def possible_readings(size: int):
     lower_limit, higher_limit = 10 ** (size-1), 9 * int('1' * size)

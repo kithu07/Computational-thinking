@@ -1,2 +1,0 @@
-def find_inverse(choosennum: int, modnum: int):
-    q,r = divmod(modnum, choosennum)
