@@ -11,4 +11,4 @@ def mod_inverse(modulo : int , num : int) :
         y1,y2 = y2, y1 - (y2 * q)
         x1,x2 = x2, x1 - (x2 * q)
     return y2 % modulo  
-print(mod_inverse(181,14))
+print(mod_inverse(4988,7))
