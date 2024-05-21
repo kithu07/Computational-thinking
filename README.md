@@ -39,3 +39,5 @@ This repository includes all the programs done during the bootcamp.
 16. Odometer
 
 17. Knight tour tracker
+
+18. Odometer using class
