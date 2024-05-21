@@ -45,7 +45,13 @@ class Odometer:                           #class odometer
     def n_steps_backward(self, n: int):
         for step in range(n):
             self.backward()
-    
+
+    def no_of_steps(self, reading2):
+        steps = 0
+        while self.reading != reading2:
+            self.forward()
+            steps += 1           
+        return steps    
     
 o1 = Odometer(3)
 print(o1)
@@ -53,7 +59,8 @@ o1.forward()
 print(o1)
 o1.backward()
 print(o1)
-o1.n_steps_forward(50)
+o1.n_steps_forward(3)
 print(o1)
 o1.n_steps_backward(3)
 print(o1)
+print(o1.no_of_steps(157))
