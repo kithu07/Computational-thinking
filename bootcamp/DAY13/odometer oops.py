@@ -48,11 +48,11 @@ class Odometer:                           #class odometer
 
     def no_of_steps(self, reading2):
         steps = 0
-        org_reading = self.reading
-        while self.reading != reading2:
-            self.forward()
-            steps += 1 
-        self.reading = org_reading          
+        o2 = Odometer(3)
+        o2.reading = self.reading
+        while o2.reading != reading2:
+            o2.forward()
+            steps += 1         
         return steps    
     
 o1 = Odometer(3)
